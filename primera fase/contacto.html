@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/estiloNav.css" type="text/css">
+    <link rel="stylesheet" href="css/contacto.css" type="text/css">
+    <script src="js/contacto.js"></script>
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>EscPc | Contacto</title>
+  </head>
+  <body>
+      <!--Barra de navegacion-->
+    <div class="container-fluid"  style="background-color:black;">
+        <nav class="navbar navbar-expand-lg navbar-dark text-center">
+          <a class="navbar-brand" href="index.html">EscPc</a>  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                        
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+              
+            
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="desplegable">Componentes</a>
+                    <div class="dropdown-menu">
+                        <a href="placasmadres.html" class="dropdown-item">Placas Madres</a>
+                        <a href="procesadores.html" class="dropdown-item">Procesadores</a>
+                        <a href="tarjetadevideo.html" class="dropdown-item">Tarjetas de video</a>
+                        <a href="ram.html" class="dropdown-item">Ram</a>
+                        <a href="almacenamiento.html" class="dropdown-item">Almacenamiento</a>
+                        <a href="fuenteDePoder.html" class="dropdown-item">Fuentes de Poder</a>
+                        <a href="gabinetes.html" class="dropdown-item">Gabinetes</a>
+                        <a href="monitores.html" class="dropdown-item">Monitores</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="armarpc.html" class="nav-link">Como armar un pc</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+                                
+              </ul>
+
+              <form class="form-inline my-2 my-lg-0">
+                    <input style="font-size: 13px;" class="form-control mr-sm-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <button style="font-size: 13px;" class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Buscar</button>                 
+              </form>
+            
+            </div>
+          </nav>
+    </div>
+
+
+
+    <!--Aqui empieza el formulario-->
+    <div class="form">
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-md-7">
+                <h1>Necesitas ayuda?</h1>
+                <hr class="bg-info">
+                <p class="pb-0 mb-0" >No dudes en contactarnos,responderemos lo mas pronto posible </p>
+                <p class="text-danger small pt-0 nt-0">*Todos los campos son obligatorios</p>
+                    
+                <form action="index.html" method="post" name="datos" onsubmit="return validacion()">                       
+                    <div class="row form-group">
+                        <label for="nombre" class="col-form-label col-md-4">*Nombre: </label>
+                        <div class="col-md-8">
+                            <input type="text" name="nom" id="nombre" class="nombre form-control" placeholder="Ingrese su nombre">
+                        </div>          
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="apellido" class="col-form-label col-md-4">*Apellido:</label>
+                        <div class="col-md-8">
+                            <input type="text" name="apell" id="apellido" class="apellido form-control" placeholder="Ingrese su apellido">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="telefono" class="col-form-label col-md-4">*Telefono:</label>
+                        <div class="col-md-8">
+                            <input type="text" name="fono" id="telefono" class="telefono form-control" placeholder="Ingrese su número de telefono">
+                        </div>
+                    </div>
+                        
+                    <div class="row form-group">
+                        <label for="mail" class="col-form-label col-md-4">*E-mail: </label>
+                        <div class="col-md-8">
+                            <input type="email" name="email" id="mail" class="mail form-control" placeholder="mail@ejemplo.com">
+                        </div>          
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="asunto" class="col-form-label col-md-4">*Asunto:</label>
+                        <div class="col-md-8">
+                            <select name="asun" id="asunto" class="asunto form-control" aria-placeholder="Seleccione un Asunto" size="0">
+                                <option class="op" value="vacio"> </option>
+                                <option class="op" value="sugerencia">Sugerencia</option>
+                                <option class="op" value="reclamo">Reclamo</option>
+                                <option class="op" value="consulta">Consulta</option>
+                            </select>
+                        </div>                          
+                    </div>
+                   
+                    <div class="row form-group">
+                        <label for="mensaje" class="col-form-label col-md-4">*Mensaje:</label>                            
+                        <div class="col-md-8">
+                            <textarea rows="3" class="mensaje form-control" id="mensaje" name="mens"></textarea>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" value="Enviar" class="btn btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+

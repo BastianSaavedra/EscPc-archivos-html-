@@ -1,0 +1,12 @@
+@font-face{
+    font-family: fuente8bits;
+    src: url(Sabo-Filled.ttf);
+}
+
+.form{
+    font-family: fuente8bits;   
+}
+
+body{
+    background-color: grey;
+}
